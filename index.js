@@ -99,6 +99,7 @@ document.addEventListener('keydown', function(event) {
 
       if (documentReady){
         nextSequence();
+        const button = document.querySelectorAll(".btn");
         button.forEach(button => {
           button.addEventListener('touchstart', (event) => {
             const playerColor = event.target.id;
